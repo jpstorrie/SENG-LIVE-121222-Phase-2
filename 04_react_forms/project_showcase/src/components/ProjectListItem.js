@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const ProjectListItem = ({ id, about, image, link, name, phase }) => {
-
   const [clapCount, setClapCount] = useState(0);
 
   const handleClap = () => setClapCount(prevCount => prevCount + 1);
@@ -30,6 +29,6 @@ const ProjectListItem = ({ id, about, image, link, name, phase }) => {
       </footer>
     </li>
   );
-}
+};
 
 export default ProjectListItem;
